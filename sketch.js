@@ -66,16 +66,19 @@ text("Food Left For The Dog: "+foodS,20,100);
 //text("Last Fed Sheru at:"+lastFed,20,140)
 text("Name Of The Dog:" +name,20,180); 
 
-if(lastFed>=12){
+if(lastFed>12){
   text("Last Fed Sheru at:" +lastFed%12 +" PM",20,140)
 }
 else if(lastFed===0){
   text("Last Fed Sheru at:12AM",20,140)
 }
+else if(lastFed===12){
+  text("Last Fed Sheru at:12" +" PM",20,140)
+}
 else{
   text("Last Fed Sheru at:"+lastFed +" AM",20,140)
 }
-
+	
 drawSprites();
 }
 
